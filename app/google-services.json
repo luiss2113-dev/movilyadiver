@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "731671469344",
+    "firebase_url": "https://movilya-69aef.firebaseio.com",
+    "project_id": "movilya-69aef",
+    "storage_bucket": "movilya-69aef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731671469344:android:6961b23ac61a9f241fcb45",
+        "android_client_info": {
+          "package_name": "com.desarrollosmoyan.movilyaDriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731671469344-896drr450d4rgbhd8lls133e6pv0s87n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.desarrollosmoyan.movilyaDriver",
+            "certificate_hash": "c591de14e93eaaa93c4c3247806f74ed6a5afd31"
+          }
+        },
+        {
+          "client_id": "731671469344-4jr2lrp5albkbc5crfk9e42ip4mg5u5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2tdnNj-XfEJ7XUWkH_0cZF70bU3KC9mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731671469344-4jr2lrp5albkbc5crfk9e42ip4mg5u5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

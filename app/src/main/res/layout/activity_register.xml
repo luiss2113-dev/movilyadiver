@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/ic_arrow_whi_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Super Taxis Conductor"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/cdo"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.10"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="150dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/business" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Registrate"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:fontFamily="@font/lato_black"
+                    android:gravity="center"
+                    android:text="Llena los campos para enviar un registro."
+                    android:textColor="@color/grey_80"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:elevation="5dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyEditText
+                                    android:id="@+id/first_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:fontFamily="@font/lato_black"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/first_name"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapWords|textPersonName"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyEditText
+                                    android:id="@+id/last_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:fontFamily="@font/lato_black"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/last_name"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapWords|textPersonName"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyEditText
+                                    android:id="@+id/email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:fontFamily="@font/lato_black"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/email"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyEditText
+                                    android:id="@+id/password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/password"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textPassword"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/edittext_background"
+                                android:padding="5dp">
+
+                                <Spinner
+                                    android:id="@+id/city_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:textColor="@color/black" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/edittext_background"
+                                android:orientation="horizontal">
+
+                                <com.hbb20.CountryCodePicker
+                                    android:id="@+id/cpp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_weight="0.30"
+                                    android:visibility="visible"
+                                    app:ccp_autoDetectCountry="true"
+                                    app:ccp_textSize="15sp" />
+
+
+                                <EditText
+                                    android:id="@+id/idphone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_weight="0.80"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/lato_black"
+                                    android:gravity="center"
+                                    android:hint="@string/phone_number"
+                                    android:inputType="phone"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/get_otp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:background="@drawable/button_shape"
+                                android:paddingLeft="@dimen/_30sdp"
+                                android:paddingRight="@dimen/_30sdp"
+                                android:text="Obtener codigo"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/view_beforeverification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_black"
+                        android:text="@string/enter_otp_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.chaos.view.PinView
+                                android:id="@+id/otppin"
+                                style="@style/PinWidget.PinView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="30dp"
+                                android:cursorVisible="true"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                app:cursorColor="@color/colorPrimary"
+                                app:cursorWidth="2dp"
+                                app:itemCount="6"
+                                app:itemHeight="48dp"
+                                app:itemRadius="4dp"
+                                app:itemSpacing="5dp"
+                                app:lineColor="#3E000000"
+                                app:lineWidth="1dp"
+                                app:viewType="rectangle" />
+
+                            <Button
+                                android:id="@+id/verify_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:background="@drawable/button_shape"
+                                android:paddingLeft="@dimen/_30sdp"
+                                android:paddingRight="@dimen/_30sdp"
+                                android:text="Verificar"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/sendotpagain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:enabled="false"
+                                android:fontFamily="@font/amaranth"
+                                android:text="@string/send_otp_again"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_14sdp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_afterverification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_black"
+                        android:text="Contraseña / Pin "
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.chaos.view.PinView
+                                android:id="@+id/passpin"
+                                style="@style/PinWidget.PinView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:cursorVisible="true"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:textColor="#222222"
+                                android:textSize="18sp"
+                                app:cursorColor="@color/colorPrimary"
+                                app:cursorWidth="2dp"
+                                app:itemCount="6"
+                                app:itemHeight="48dp"
+                                app:itemRadius="4dp"
+                                app:itemSpacing="5dp"
+                                app:lineWidth="1dp"
+                                app:viewType="rectangle" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyEditText
+                                    android:id="@+id/address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/edittext_background"
+                                    android:gravity="start|center_vertical"
+                                    android:hint="@string/area"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textMultiLine"
+                                    android:maxLines="1"
+                                    android:paddingStart="10dp"
+                                    android:textAlignment="viewStart" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="horizontal">
+
+                                <com.desarrollosmoyan.movilyaDriver.Utilities.MyCheckbox
+                                    android:id="@+id/checkedterms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical" />
+
+                                <TextView
+                                    android:id="@+id/termms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="@string/terms" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <Button
+                        android:id="@+id/nextIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/button_shape"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingRight="@dimen/_30sdp"
+                        android:text="@string/signup"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/alsign"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_gravity="bottom|end"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/already_have_an_account_sign_in_here"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

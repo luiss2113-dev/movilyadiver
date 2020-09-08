@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/d_name"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/amaranth"
+            android:text="Document name"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/d_type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Driver"
+            android:visibility="gone"
+            android:fontFamily="@font/amaranth"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/d_upload"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.25"
+            android:text="Cargar"
+            android:theme="@style/Button.Primary" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/d_done"
+            android:fontFamily="@font/amaranth"
+            android:textStyle="bold"
+            android:text="Done"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+
+</LinearLayout>

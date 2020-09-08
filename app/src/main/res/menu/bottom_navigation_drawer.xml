@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/b_nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/b_nav_history"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history_black_24dp"/>
+    <item
+        android:id="@+id/b_nav_wallet"
+        android:title="@string/summary"
+        android:icon="@drawable/wallet"/>
+    <item
+        android:id="@+id/b_nav_profile"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_dummy_user"/>
+
+</menu>
